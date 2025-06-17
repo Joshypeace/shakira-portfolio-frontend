@@ -1,0 +1,8 @@
+# Ignore backend folder
+server/
+node_modules/
+.env
+
+# Ignore VS Code config and other clutter
+.vscode/
+.DS_Store

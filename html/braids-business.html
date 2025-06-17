@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shakirah M'madi | Hair Braiding Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="icon" href="data:,">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="../css/styles.css" rel="stylesheet">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans overflow-x-hidden">
+    <!-- Animated Stars Background -->
+    <div id="stars-container" class="fixed inset-0 overflow-hidden z-0"></div>
+    
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-gray-900 bg-opacity-90 backdrop-filter backdrop-blur-sm">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="../index.html" class="text-2xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent font-space hover:animate-pulse">Shakirah M.</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#services" class="nav-link hover:text-purple-400 transition">Services</a>
+                    <a href="#pricing" class="nav-link hover:text-purple-400 transition">Pricing</a>
+                    <a href="#gallery" class="nav-link hover:text-purple-400 transition">Gallery</a>
+                    <a href="#contact" class="nav-link hover:text-purple-400 transition">Contact</a>
+                </div>
+                <button class="md:hidden focus:outline-none" id="menu-toggle">
+                    <svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="md:hidden hidden mt-4 transition-all duration-300 ease-in-out transform origin-top" id="mobile-menu">
+                <a href="#services" class="block py-2 hover:text-purple-400 transition hover:bg-gray-800 rounded px-2">Services</a>
+                <a href="#pricing" class="block py-2 hover:text-purple-400 transition hover:bg-gray-800 rounded px-2">Pricing</a>
+                <a href="#gallery" class="block py-2 hover:text-purple-400 transition hover:bg-gray-800 rounded px-2">Gallery</a>
+                <a href="#contact" class="block py-2 hover:text-purple-400 transition hover:bg-gray-800 rounded px-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-20 pb-12 px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-12 md:mb-0">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 font-space">
+                    <span class="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">Graceful Look</span> Boutique
+                </h1>
+                <h2 class="text-2xl md:text-3xl font-semibold mb-6 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Professional Hair Braiding</h2>
+                <p class="text-lg md:text-xl mb-8 max-w-lg">
+                    Transform your look with exquisite braiding styles crafted with precision and care by Shakirah.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#contact" class="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-bold py-3 px-6 rounded-lg transition-all transform hover:scale-105 shadow-lg shadow-purple-500/20 hover:shadow-purple-500/40">
+                        Book Appointment
+                    </a>
+                    <a href="../index.html" class="border-2 border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-gray-900 font-bold py-3 px-6 rounded-lg transition-all transform hover:scale-105">
+                        Back to Portfolio
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <dotlottie-player src="https://lottie.host/686b415e-05e2-4d4b-9be2-3fe59376f5f0/1J9Feg3nAH.lottie" background="transparent" speed="1" style="width: 100%; max-width: 500px;" loop autoplay></dotlottie-player>
+            </div>
+        </div>
+    </section>
+
+   <!-- Services Section -->
+<section id="services" class="py-20 bg-gray-800 relative z-10">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent font-space">Graceful Look Boutique</h2>
+        <h3 class="text-xl md:text-2xl font-semibold mb-16 text-center text-purple-300">The Hair Doctor 😊</h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="skill-card bg-gray-700 p-8 rounded-lg hover:shadow-lg transition-all transform hover:-translate-y-2 hover:shadow-purple-500/20 border border-gray-600 hover:border-purple-400">
+                <div class="flex justify-center mb-6">
+                    <i class="fas fa-star text-purple-400 text-5xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-3 text-center bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Premium Braiding</h3>
+                <p class="text-gray-300 text-center">
+                    High-quality braiding with premium materials for long-lasting, beautiful styles.
+                </p>
+                <ul class="space-y-2 mt-4 text-gray-300">
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-purple-400 mt-1 mr-2"></i>
+                        <span>Afro kinky styles</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-purple-400 mt-1 mr-2"></i>
+                        <span>Box braids twist</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-purple-400 mt-1 mr-2"></i>
+                        <span>Noteless styles</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="skill-card bg-gray-700 p-8 rounded-lg hover:shadow-lg transition-all transform hover:-translate-y-2 hover:shadow-purple-500/20 border border-gray-600 hover:border-purple-400">
+                <div class="flex justify-center mb-6">
+                    <i class="fas fa-gem text-purple-400 text-5xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-3 text-center bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Specialty Styles</h3>
+                <p class="text-gray-300 text-center">
+                    Unique and creative braiding styles that make a statement.
+                </p>
+                <ul class="space-y-2 mt-4 text-gray-300">
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-purple-400 mt-1 mr-2"></i>
+                        <span>Butterfly locs</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-purple-400 mt-1 mr-2"></i>
+                        <span>Boho braids</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-purple-400 mt-1 mr-2"></i>
+                        <span>Creative cornrows</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="skill-card bg-gray-700 p-8 rounded-lg hover:shadow-lg transition-all transform hover:-translate-y-2 hover:shadow-purple-500/20 border border-gray-600 hover:border-purple-400">
+                <div class="flex justify-center mb-6">
+                    <i class="fas fa-crown text-purple-400 text-5xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-3 text-center bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Hair Styling</h3>
+                <p class="text-gray-300 text-center">
+                    Elegant hairstyles to complement your braids or natural hair.
+                </p>
+                <ul class="space-y-2 mt-4 text-gray-300">
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-purple-400 mt-1 mr-2"></i>
+                        <span>Ponytail styles</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-purple-400 mt-1 mr-2"></i>
+                        <span>Sleek back styles</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-purple-400 mt-1 mr-2"></i>
+                        <span>Add-on curls</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Section -->
+<section id="pricing" class="py-20 relative z-10">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent font-space">Braiding Price List</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Afro Kinky -->
+            <div class="project-card bg-gray-700 rounded-lg overflow-hidden hover:shadow-xl transition-all transform hover:-translate-y-2 hover:shadow-purple-500/20 border border-gray-600 hover:border-purple-400">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-4 text-center bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent border-b border-gray-600 pb-2">Afro Kinky Normal</h3>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex justify-between">
+                            <span>Small</span>
+                            <span class="font-bold text-purple-400">K12,000</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Medium</span>
+                            <span class="font-bold text-purple-400">K10,500</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Afro Kinky Hair Twist -->
+            <div class="project-card bg-gray-700 rounded-lg overflow-hidden hover:shadow-xl transition-all transform hover:-translate-y-2 hover:shadow-purple-500/20 border border-gray-600 hover:border-purple-400">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-4 text-center bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent border-b border-gray-600 pb-2">Afro Kinky Hair Twist</h3>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex justify-between">
+                            <span>Mini</span>
+                            <span class="font-bold text-purple-400">K18,000</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Small</span>
+                            <span class="font-bold text-purple-400">K12,000</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Medium</span>
+                            <span class="font-bold text-purple-400">K10,500</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Normal size</span>
+                            <span class="font-bold text-purple-400">K10,000</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Box Braids Twist -->
+            <div class="project-card bg-gray-700 rounded-lg overflow-hidden hover:shadow-xl transition-all transform hover:-translate-y-2 hover:shadow-purple-500/20 border border-gray-600 hover:border-purple-400">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-4 text-center bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent border-b border-gray-600 pb-2">Box Braids Twist</h3>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex justify-between">
+                            <span>Small</span>
+                            <span class="font-bold text-purple-400">K15,000</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Medium</span>
+                            <span class="font-bold text-purple-400">K10,500</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Large</span>
+                            <span class="font-bold text-purple-400">K9,500</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Twist Noteless -->
+            <div class="project-card bg-gray-700 rounded-lg overflow-hidden hover:shadow-xl transition-all transform hover:-translate-y-2 hover:shadow-purple-500/20 border border-gray-600 hover:border-purple-400">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-4 text-center bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent border-b border-gray-600 pb-2">Twist Noteless</h3>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex justify-between">
+                            <span>Standard</span>
+                            <span class="font-bold text-purple-400">K13,000</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Noteless Box Braids -->
+            <div class="project-card bg-gray-700 rounded-lg overflow-hidden hover:shadow-xl transition-all transform hover:-translate-y-2 hover:shadow-purple-500/20 border border-gray-600 hover:border-purple-400">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-4 text-center bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent border-b border-gray-600 pb-2">Noteless Box Braids</h3>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex justify-between">
+                            <span>Small</span>
+                            <span class="font-bold text-purple-400">K15,000</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Medium</span>
+                            <span class="font-bold text-purple-400">K12,500</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Large</span>
+                            <span class="font-bold text-purple-400">K10,500</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Butterfly Locs -->
+            <div class="project-card bg-gray-700 rounded-lg overflow-hidden hover:shadow-xl transition-all transform hover:-translate-y-2 hover:shadow-purple-500/20 border border-gray-600 hover:border-purple-400">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-4 text-center bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent border-b border-gray-600 pb-2">Butterfly Locs</h3>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex justify-between">
+                            <span>Small (Labor)</span>
+                            <span class="font-bold text-purple-400">K25,000</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Medium (Labor)</span>
+                            <span class="font-bold text-purple-400">K20,500</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Large (Labor)</span>
+                            <span class="font-bold text-purple-400">K18,000</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Full service (Labor + Materials)</span>
+                            <span class="font-bold text-purple-400">K40,000-K70,000</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Box Braids Shorts -->
+            <div class="project-card bg-gray-700 rounded-lg overflow-hidden hover:shadow-xl transition-all transform hover:-translate-y-2 hover:shadow-purple-500/20 border border-gray-600 hover:border-purple-400">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-4 text-center bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent border-b border-gray-600 pb-2">Box Braids Shorts</h3>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex justify-between">
+                            <span>Standard</span>
+                            <span class="font-bold text-purple-400">K9,000</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Boho Braids -->
+            <div class="project-card bg-gray-700 rounded-lg overflow-hidden hover:shadow-xl transition-all transform hover:-translate-y-2 hover:shadow-purple-500/20 border border-gray-600 hover:border-purple-400">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-4 text-center bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent border-b border-gray-600 pb-2">Boho Braids</h3>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex justify-between">
+                            <span>Small</span>
+                            <span class="font-bold text-purple-400">K18,000</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Medium</span>
+                            <span class="font-bold text-purple-400">K14,500</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Large</span>
+                            <span class="font-bold text-purple-400">K12,500</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Natural Cornrows -->
+            <div class="project-card bg-gray-700 rounded-lg overflow-hidden hover:shadow-xl transition-all transform hover:-translate-y-2 hover:shadow-purple-500/20 border border-gray-600 hover:border-purple-400">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-4 text-center bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent border-b border-gray-600 pb-2">Natural Cornrows</h3>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex justify-between">
+                            <span>Simple</span>
+                            <span class="font-bold text-purple-400">K3,000</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Styled (varies)</span>
+                            <span class="font-bold text-purple-400">Custom Quote</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Hair Styles -->
+            <div class="project-card bg-gray-700 rounded-lg overflow-hidden hover:shadow-xl transition-all transform hover:-translate-y-2 hover:shadow-purple-500/20 border border-gray-600 hover:border-purple-400">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-4 text-center bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent border-b border-gray-600 pb-2">Hair Styles (Includes Materials)</h3>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex justify-between">
+                            <span>Ponytail with Gel + add-ons</span>
+                            <span class="font-bold text-purple-400">K15,000</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Ponytail with weave</span>
+                            <span class="font-bold text-purple-400">K20,000-K30,000</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Sleek back ponytail with bangs</span>
+                            <span class="font-bold text-purple-400">K15,000</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Labor</span>
+                            <span class="font-bold text-purple-400">K12,500</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Additional Services -->
+            <div class="project-card bg-gray-700 rounded-lg overflow-hidden hover:shadow-xl transition-all transform hover:-translate-y-2 hover:shadow-purple-500/20 border border-gray-600 hover:border-purple-400">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-4 text-center bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent border-b border-gray-600 pb-2">Additional Services</h3>
+                    <p class="text-center mb-4 text-gray-400">
+                        <span class="font-bold">NB:</span> Additional styles have extra costs (negotiable)
+                    </p>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex justify-between">
+                            <span>Curls</span>
+                            <span class="font-bold text-purple-400">K2,500</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Curls on braids</span>
+                            <span class="font-bold text-purple-400">K3,000</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Gallery Section -->
+<section id="gallery" class="py-20 bg-gray-900 relative z-10">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent font-space">
+      Braiding Video Gallery
+    </h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      
+      <!-- Video Card 1 -->
+      <div class="project-card bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-purple-500/20 transition-all transform hover:-translate-y-2">
+        <video 
+          src="../videos/hair1.mp4" 
+          class="w-full h-64 object-cover cursor-pointer rounded-md"
+          controls 
+          preload="metadata"
+        ></video>
+      </div>
+
+      <!-- Video Card 2 -->
+      <div class="project-card bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-purple-500/20 transition-all transform hover:-translate-y-2">
+        <video 
+          src="../videos/hair2.mp4" 
+          class="w-full h-64 object-cover cursor-pointer rounded-md"
+          controls 
+          preload="metadata"
+        ></video>
+      </div>
+
+      <!-- Video Card 3 -->
+      <div class="project-card bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-purple-500/20 transition-all transform hover:-translate-y-2">
+        <video 
+          src="../videos/hair3.mp4" 
+          class="w-full h-64 object-cover cursor-pointer rounded-md"
+          controls 
+          preload="metadata"
+        ></video>
+      </div>
+
+      <!-- Video Card 4 -->
+      <div class="project-card bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-purple-500/20 transition-all transform hover:-translate-y-2">
+        <video 
+          src="../videos/hair4.mp4" 
+          class="w-full h-64 object-cover cursor-pointer rounded-md"
+          controls 
+          preload="metadata"
+        ></video>
+      </div>
+
+      <!-- Video Card 5 -->
+      <div class="project-card bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-purple-500/20 transition-all transform hover:-translate-y-2">
+        <video 
+          src="../videos/hair5.mp4" 
+          class="w-full h-64 object-cover cursor-pointer rounded-md"
+          controls 
+          preload="metadata"
+        ></video>
+      </div>
+
+      <!-- Video Card 6 -->
+      <div class="project-card bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-purple-500/20 transition-all transform hover:-translate-y-2">
+        <video 
+          src="../videos/hair6.mp4" 
+          class="w-full h-64 object-cover cursor-pointer rounded-md"
+          controls 
+          preload="metadata"
+        ></video>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 relative z-10">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent font-space">Book Your Appointment</h2>
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-12 md:mb-0 md:pr-8">
+                    <h3 class="text-2xl font-semibold mb-6">Contact Information</h3>
+                    <p class="text-lg mb-8">
+                        Ready to transform your look? Book an appointment or ask any questions about braiding services.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-purple-400 text-xl mr-4"></i>
+                            <span>shakirammadi188@gmail.com</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone-alt text-purple-400 text-xl mr-4"></i>
+                            <span>+265 998 733 188</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-purple-400 text-xl mr-4"></i>
+                            <span>Lilongwe, Malawi</span>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h4 class="text-xl font-semibold mb-4">Business Hours</h4>
+                        <ul class="space-y-2 text-gray-300">
+                            <li class="flex justify-between">
+                                <span>Monday - Friday</span>
+                                <span>8:00 AM - 6:00 PM</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Saturday</span>
+                                <span>10:00 AM - 4:00 PM</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Sunday</span>
+                                <span>Closed</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <form id="appointment-form" class="space-y-6 bg-gray-800 p-8 rounded-lg shadow-lg">
+                        <div>
+                            <label for="name" class="block mb-2">Your Name</label>
+                            <input type="text" id="name" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-2">Your Email</label>
+                            <input type="email" id="email" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="phone" class="block mb-2">Phone Number</label>
+                            <input type="tel" id="phone" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="service" class="block mb-2">Service Interested In</label>
+                            <select id="service" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent">
+                                <option value="">Select a service</option>
+                                <option value="afro-kinky">Afro Kinky</option>
+                                <option value="hair-twist">Afro Kinky Hair Twist</option>
+                                <option value="box-braids">Box Braids Twist</option>
+                                <option value="twist-noteless">Twist Noteless</option>
+                                <option value="noteless-box">Noteless Box Braids</option>
+                                <option value="butterfly-locs">Butterfly Locs</option>
+                                <option value="box-shorts">Box Braids Shorts</option>
+                                <option value="boho-braids">Boho Braids</option>
+                                <option value="cornrows">Natural Cornrows</option>
+                                <option value="hairstyles">Hair Styles</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="date" class="block mb-2">Preferred Date</label>
+                            <input type="date" id="date" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="message" class="block mb-2">Additional Notes</label>
+                            <textarea id="message" rows="4" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-bold py-3 px-6 rounded-lg transition transform hover:scale-105">
+                            Book Appointment
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-12 relative z-10">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-2xl font-bold mb-4 font-space bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Glamorous Boutique</h3>
+                    <p class="max-w-md text-gray-400">
+                        Professional hair braiding services by Shakirah M'madi.
+                    </p>
+                </div>
+                <div class="mb-8 md:mb-0">
+                    <h4 class="text-xl font-semibold mb-4 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#services" class="hover:text-purple-400 transition">Services</a></li>
+                        <li><a href="#pricing" class="hover:text-purple-400 transition">Pricing</a></li>
+                        <li><a href="#gallery" class="hover:text-purple-400 transition">Gallery</a></li>
+                        <li><a href="#contact" class="hover:text-purple-400 transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="https://wa.me/265998733188" class="text-gray-400 hover:text-purple-400 text-2xl transition">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100073714879987" class="text-gray-400 hover:text-purple-400 text-2xl transition">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/mphatso188_mw?igsh=YzljYTk1ODg3Zg==" class="text-gray-400 hover:text-purple-400 text-2xl transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@blessed.keira?_t=ZM-8xBAB47Sm6q&_r=1" class="text-gray-400 hover:text-purple-400 text-2xl transition">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                    <div class="mt-6">
+                        <a href="../index.html" class="text-purple-400 hover:text-white transition flex items-center">
+                            <i class="fas fa-arrow-left mr-2"></i>
+                            Back to Network Portfolio
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Shakirah M'madi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-gradient-to-r from-purple-500 to-pink-500 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-all opacity-0 invisible hover:from-purple-600 hover:to-pink-600 hover:shadow-purple-500/30 transform hover:scale-110">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+   <!-- TOAST -->
+
+   <div id="toast" style="display:none; position:fixed; bottom:30px;
+    right:30px; background-color:#333; color:#fff; padding:16px 24px; 
+    border-radius:8px; box-shadow:0 0 10px rgba(0,0,0,0.2); z-index:9999; transition: all 0.3s ease;">
+  <span id="toast-message"></span>
+</div>
+
+
+     <script
+  src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+  type="module"
+></script>
+    <script src="../js/callme.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
