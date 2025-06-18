@@ -10,7 +10,7 @@ document.getElementById("appointment-form").addEventListener("submit", async fun
     message: document.getElementById("message").value
   };
 
-  fetch("http://localhost:3000/send-whatsapp", {
+  fetch("https://shakira-portfolio-backend.onrender.com//send-whatsapp", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(data)
