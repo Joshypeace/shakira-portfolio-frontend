@@ -17,12 +17,22 @@ document.getElementById("appointment-form").addEventListener("submit", async fun
   }).then((res) => res.json())
 .then((data) => {
   console.log("API Response:", data);
+
   if (data.success) {
     showToast(data.message || "Message sent successfully!", "success");
   } else {
-    showToast(data.message || "Failed to send WhatsApp message.", "error");
+    if (data.message && data.message.toLowerCase().includes("already booked")) {
+      showToast(data.message, "warning");
+    } else {
+      showToast(data.message || "Failed to send WhatsApp message.", "error");
+    }
   }
+})
+.catch((err) => {
+  console.error("Fetch error:", err);
+  showToast("Something went wrong while sending message.", "error");
 });
+
 
 });
 
@@ -34,27 +44,29 @@ function showToast(message, type = "info") {
 
   toastMessage.textContent = message;
 
- 
   switch (type) {
     case "success":
-      toast.style.backgroundColor = "#28a745"; 
+      toast.style.backgroundColor = "#28a745";
       break;
     case "error":
-      toast.style.backgroundColor = "#dc3545";
+      toast.style.backgroundColor = "#dc3545"; 
+      break;
+    case "warning":
+      toast.style.backgroundColor = "#ffc107"; 
+      toast.style.color = "#000"; 
       break;
     default:
-      toast.style.backgroundColor = "#333"; 
+      toast.style.backgroundColor = "#333";
+      toast.style.color = "#fff";
   }
 
   toast.style.display = "block";
   toast.style.opacity = "1";
 
- 
   setTimeout(() => {
     toast.style.opacity = "0";
     setTimeout(() => {
       toast.style.display = "none";
-    }, 300); 
+    }, 300);
   }, 3000);
 }
-
