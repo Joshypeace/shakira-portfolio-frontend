@@ -14,19 +14,15 @@ document.getElementById("appointment-form").addEventListener("submit", async fun
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(data)
-  }).then((res) => res.text())
-  .then((text) => {
-    console.log("API Response:", text);
-    if (text.includes("Message queued")) {
-      showToast("Message sent successfully!", "success");
-    } else {
-      showToast("Failed to send WhatsApp message.", "error");
-    }
-  })
-  .catch((err) => {
-    console.error("Fetch error:", err);
-    showToast("Something went wrong while sending message.", "error");
-  });
+  }).then((res) => res.json())
+.then((data) => {
+  console.log("API Response:", data);
+  if (data.success) {
+    showToast(data.message || "Message sent successfully!", "success");
+  } else {
+    showToast(data.message || "Failed to send WhatsApp message.", "error");
+  }
+});
 
 });
 
